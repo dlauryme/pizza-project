@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cards.css">
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="status.css">
+    <link rel="stylesheet" type="text/css" href="sales.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Medieval Pizza</title>
+</head>
+
+<body>
+
+    <section id="sidebar">
+        <button id="sidebar-menu-button" class="menu-button">
+            <div class="menu-button-anim" id="menu-button-anim1"></div>
+            <div class="menu-button-anim" id="menu-button-anim2"></div>
+            <div class="menu-button-anim" id="menu-button-anim3"></div>
+        </button>
+        <button class="redirect" id="redirect-main">
+            Main
+        </button>
+        <button class="redirect" id="redirect-catalog">
+            Catalog
+        </button>
+        <button class="redirect" id="redirect-action">
+            Actions
+        </button>
+    </section>
+    <section id="main-wrapper">
+        <header>
+            <div>
+                <img src="img/shield.ico" alt="">
+            </div>
+            <div>
+                <h1>medieval pizza</h1>
+            </div>
+            <div>
+                <div>
+                    <button id="cart-button" class="menu-button">
+                        <img src="./img/icons/cart.png" alt="">
+                        <div id="cart-counter" style="visibility: hidden;">0</div>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <button id="header-menu-button" class="menu-button">
+                    <div class="menu-button-anim" id="menu-button-anim1"></div>
+                    <div class="menu-button-anim" id="menu-button-anim2"></div>
+                    <div class="menu-button-anim" id="menu-button-anim3"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+        </main>
+        <footer>
+            <div class="footer-background-container-inner">
+                <div id="footer-background"></div>
+            </div>
+            <div class="footer-text">
+                <div>
+                    <h2>About</h2>
+                    <h3><a href="">Menu</a></h3>
+                    <h3><a href="">Med info</a></h3>
+                    <h3><a href="">Restaurants</a></h3>
+                    <h3><a href="">Our app</a></h3>
+                </div>
+                <div>
+                    <h2>Contacts</h2>
+                    <h3>medieval.pizza@gmail.com</h3>
+                    <h3>+38 099 370 14 75</h3>
+                    <h3><a href="">Facebook</a></h3>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script type="module" src="cards.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
