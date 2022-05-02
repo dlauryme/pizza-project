@@ -29,7 +29,7 @@ function setAnimationOut(elements) {
         for(let i = 0; i < elements.sizeButtons.length; i++) {
             elements.sizeButtons[i].style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.2)";
         }
-        elements.purchase.style.transform = `translateZ(0px)`;
+        //elements.purchase.style.transform = `translateZ(0px)`;
     });
 }
 
@@ -43,7 +43,7 @@ function setAnimationIn(elements) {
         for(let i = 0; i < elements.sizeButtons.length; i++) {
             elements.sizeButtons[i].style.boxShadow = "0 0px 20px rgba(0, 0, 0, 0.2)";
         }
-        elements.purchase.style.transform = `translateZ(30px)`;
+        //elements.purchase.style.transform = `translateZ(30px)`;
     });
 }
 
@@ -86,7 +86,7 @@ function setButtonsClickListeners(productId, elements) {
             duration: 200,
             easing: 'ease'
         }
-        elements.purchase.animate(keyframes, params)
+        elements.purchaseButton.animate(keyframes, params)
         addToCart(productId, getActiveSizeId(elements));
     });
 
