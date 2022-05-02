@@ -9,7 +9,8 @@ function getElements(containerId) {
         // todo: set correct parrent
         title: document.querySelector(`#${containerId} .title`),
         pizza: document.querySelector(`#${containerId} .pizza`),
-        purchase: document.querySelector(`#${containerId} .purchase button`),
+        purchase: document.querySelector(`#${containerId} .purchase`),
+        purchaseButton: document.querySelector(`#${containerId} .purchase button`),
         ingredients: document.querySelector(`#${containerId} .pizza-info h3`),
         sizes: document.querySelector(`#${containerId} .sizes`),
         sizeButtons: document.querySelectorAll(`#${containerId} .sizes button`)
@@ -68,14 +69,14 @@ function setButtonsClickListeners(productId, elements) {
     for (let i = 0; i < elements.sizeButtons.length; i++) {
         let button = elements.sizeButtons[i];
         button.addEventListener('click', (e) => {
-            elements.purchase.innerHTML = `₴ ${globalObj.db.products[productId].prices[i]} - Purchase`;
+            elements.purchaseButton.innerHTML = `₴ ${globalObj.db.products[productId].prices[i]} - Purchase`;
 
             elements.sizeButtons.forEach(button => { button.classList.remove("active"); });
             button.classList.add("active");
         });
     }
 
-    elements.purchase.addEventListener('click', e => {
+    elements.purchaseButton.addEventListener('click', e => {
         let keyframes = [
             {width: '100%', backgroundColor: 'yellow', boxShadow: '0 0 10px 10px rgba(250, 250, 10, 0.5)'},
             {width: '80%'},
